@@ -1,29 +1,84 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
-    <meta charset=utf-8>
-    <title>Experiment</title>
-    <meta content="author" name="Alex">
-    <meta name= "viewport" content= "width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Rhododendrons</title>
+        <meta content="author" name="Alex">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> 
+        
+        <style>
+            body{
+                background-image: url(images/rhody_mobile.jpg);
+            }
+            
+            @media (min-width: 550px)
+            {
+                body{
+                    background-image: url(images/rhody_tablet.jpg);
+                }
+            }
+            @media (min-width: 850px)
+            {
+                body{
+                    background-image: url(images/rhody.jpg);
+                }
+            }
+        
+        </style>
+	</head>
     
-    <script src="aos-master/src/js/aos.js"></script>
+	<body>
 
-<style>
-    body{
-        background-image: url(images/rhody.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    </style>
+		<header>
+            <div class="center">
+				<h1 data-aos="zoom-in">Rhododendrons</h1>
+				<h2 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">A look at flowers</h2>
+            </div>
+		</header>
 
-</head>
-    <body>
 
-    </body>
+				<div class="facts left" data-aos="fade-down-right">
+                    <p>This is some information about rhodys that I couldn't be bothered to look up</p>
+				</div>
+				<div class="facts right" data-aos="fade-down-left">
+					<p>Look at the pointy thingies on the long brown part. Ouchy!</p>
+				</div>
+
+
+
+
+				<div class="facts left" data-aos="flip-right">
+					<p>I realized I know nothing about rhodys while creating this. I only know how to grow them. Odd...</p>
+				</div>
+                <div class="facts right" data-aos="flip-left">
+					<p>These make pretty good mothers day gifts, just so you know. I recommend the purple or red varieties.</p>
+				</div>
+
+
+<footer>
+    <ul>
+        <li>Azaleas</li>
+        <li>Irises</li>
+        <li>Lilacs</li>
+        <li><a href="rhody.html">Rhododendrons</a></li>
+        <li><a href="index.html">Roses</a></li>    
+    </ul>
+</footer>
+
+
+
+
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
+
+	</body>
 </html>
